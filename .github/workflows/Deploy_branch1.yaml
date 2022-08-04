@@ -14,7 +14,7 @@ jobs:
     - uses: azure/actions/login@v1
       with:
         #creds: ${{ secrets.AZURE_CONNECTION_LAB }}
-        creds: '{"clientId":"${{ secrets.LAB_CLIENT_ID }}","clientSecret":"${{ secrets.LAB_CLIENT_SECRET }}","subscriptionId":"${{ secrets.LAB_SUBSCRIPTION_ID }}","tenantId":"${{ secrets.LAB_TENANT_ID }}"}'
+        creds: '{"clientId":"${{ secrets.LAB_CLIENT_ID }}","clientSecret":"${{ secrets.LAB_CLIENT_SECRET }}","tenantId":"${{ secrets.LAB_TENANT_ID }}","subscriptionId":"${{ secrets.LAB_SUBSCRIPTION_ID }}"}'
 
        # Deploy ARM template
     - name: deploy_vnet
